@@ -1,0 +1,17 @@
+# Template file for 'unfurl'
+pkgname=unfurl
+version=0.2.0
+revision=1
+build_style=go
+go_import_path="github.com/tomnomnom/unfurl"
+hostmakedepends="git"
+short_desc="Parse paths, subdomains and other things from URLs"
+maintainer="w. fnintr <wfnintr@null.net>"
+license="MIT"
+homepage="https://github.com/tomnomnom/unfurl"
+distfiles="${homepage}/archive/v${version}.tar.gz"
+checksum=779c79a99a2ae725c94fc066cad094443e43783b1702c4a5c596ffa6cc4b9292
+
+post_install() {
+        vlicense LICENSE
+}
