@@ -1,0 +1,17 @@
+# Template file for 'gau'
+pkgname=gau
+version=1.0.5
+revision=1
+build_style=go
+go_import_path="github.com/lc/gau"
+hostmakedepends="git"
+short_desc="Fetch known URLs from AlienVault, the Wayback Machine, and Common Crawl"
+maintainer="w. fnintr <wfnintr@null.net>"
+license="MIT"
+homepage="https://github.com/lc/gau"
+distfiles="${homepage}/archive/v${version}.tar.gz"
+checksum=06571649695da43ef49e19e77df7bf7e9720a942558f7c3b6fe12a62b2d6a2d6
+
+post_install() {
+        vlicense LICENSE
+}
